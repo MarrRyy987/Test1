@@ -20,10 +20,10 @@ import org.json.simple.parser.ParseException;
 
 @RestController
 public class GreetingController {
-   @RequestMapping("/")
+   @RequestMapping("/tree")
    public String sayHello() throws JsonParseException, JsonMappingException, IOException, ParseException {
 	   
-	   final String uri = "https://jsonplaceholder.typicode.com/todos/1";
+	   /*final String uri = "https://jsonplaceholder.typicode.com/todos/1";
 
 	    RestTemplate restTemplate = new RestTemplate();
 	    String result = restTemplate.getForObject(uri, String.class);
@@ -35,8 +35,10 @@ public class GreetingController {
 
 	                // get a String from the JSON object
 	                String firstName = (String) jsonObject.get("title");
-	                System.out.println("The first name is title: " + firstName);
-
+	                System.out.println("The first name is title: " + firstName);*/
+	   
+	   String firstName = "MArR";
+	   
       return firstName + " || jest!!!  ||  "+System.currentTimeMillis(); //result;
    }
 }
